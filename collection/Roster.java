@@ -14,8 +14,8 @@ public class Roster {
 	
 	public int tallyAbsences(){
 		int tally = 0;
-		for (Student s:students) {
-			if (!s.isPresent()) {
+		for (int i = 0; i<students.length; i++) {
+			if (!students[i].isPresent()) {
 				tally++;
 			}
 		}
